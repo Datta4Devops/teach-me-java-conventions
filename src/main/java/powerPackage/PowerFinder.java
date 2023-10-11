@@ -1,12 +1,12 @@
 package powerPackage;
 
 public class PowerFinder {
-    public static int powerOf(int xyz, int pqr) {
-        int p = 1;
-        for (int i = 0; i<pqr; i++) {
-            p *= xyz;
+    public static int powerOf(int base, int exponent) {
+        int power = 1;
+        for (int counter = 0; counter<exponent; counter++) {
+            power *= base;
         }
-        return p;
+        return power;
     }
 
 }

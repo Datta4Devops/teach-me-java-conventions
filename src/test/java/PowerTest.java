@@ -3,25 +3,42 @@ import org.junit.jupiter.api.Test;
 
 import powerPackage.PowerFinder;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 public class PowerTest {
+    private int base;
+    private int exponent;
+    private int power;
     @Test
-    public void checkIfOneRaisedToOneIsOne() {
-        assert PowerFinder.powerOf(1,1) == 1;
+    public void checkIfOneRaisedToOneIsEqualsTOOne() {
+        base = 1;
+        exponent = 1;
+        power = 1;
+        assertEquals(PowerFinder.powerOf(base, exponent), power);
     }
 
     @Test
-    public void checkIfTwoRaisedToOneIsTwo() {
-        assert PowerFinder.powerOf(2,1) == 2;
+    public void checkIfTwoRaisedToOneIsEqualsToTwo() {
+        base = 2;
+        exponent = 1;
+        power = 2;
+        assertEquals(PowerFinder.powerOf(base, exponent), power);
     }
 
     @Test
-    public void checkIfTwoPowerTwoIsFour(){
-        assert PowerFinder.powerOf(2,2) == 4;
+    public void checkIfTwoPowerTwoIsEqualsToFour(){
+        base = 2;
+        exponent = 2;
+        power = 4;
+        assertEquals(PowerFinder.powerOf(base, exponent), power);
     }
 
     @Test
-    public void checkIfThreeRaisedToTwoIsNine(){
-        assert PowerFinder.powerOf(3,2) == 9;
+    public void checkIfThreeRaisedToTwoIsEqualsToNine(){
+        base = 3;
+        exponent = 2;
+        power = 9;
+        assertEquals(PowerFinder.powerOf(base, exponent), power);
     }
 
 }
